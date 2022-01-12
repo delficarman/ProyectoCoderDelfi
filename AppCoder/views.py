@@ -12,3 +12,22 @@ def crea_curso(self):
 
     return HttpResponse(f'Se creo el curso de {curso.nombre} con el nro de camada {curso.camada}')
 
+def inicio(req):
+
+    return render(req, 'AppCoder/inicio.html')
+
+def curso(req):
+
+    return render(req,'AppCoder/cursos.html')
+
+def profesores(req):
+
+    return render(req,'AppCoder/profesores.html')
+
+def estudiantes(req):
+
+    return render(req,'AppCoder/estudiantes.html')
+
+def entregables(req):
+
+    return render(req,'AppCoder/entregables.html')
